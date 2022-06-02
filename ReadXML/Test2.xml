@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aaa:Submission xmlns:aaa="http://me.com/isjs/kidnd/4.2" 
+				  xmlns:bbb="http://me.com/isjs/1.0" 
+				  xmlns:ccc="http://me.com/isjs/isjs-codes/1.0" 
+				  xmlns:ddd="http://release.domain.com/niem/appinfo/3.0/" 
+				  xmlns:eee="http://release.domain.com/niem/codes/fbi_/3.2/" 
+				  xmlns:j="http://release.domain.com/niem/domains/jxdm/5.2/" 
+				  xmlns:ggg="http://release.domain.com/niem/localTerminology/3.0/" 
+				  xmlns:hhh="http://release.domain.com/niem/niem-core/3.0/" 
+				  xmlns:iii-jjj="http://release.domain.com/niem/proxy/xsd/3.0/" 
+				  xmlns:s="http://release.domain.com/niem/structures/3.0/" 
+				  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+				  xmlns:lll="http://me.com/isjs/kidnd/kidnd-codes/4.2" 
+				  xmlns:zzz="http://www.stunner.com/elks/2.1" 
+				  xsi:schemaLocation="http://www.stunner.com/elks/2.1 ../base-xsd/elks/2.1/elks.xsd">
+	<bbb:MessageMetadata>
+		<bbb:MessageDateTime>2022-06-01T07:12:45</bbb:MessageDateTime>
+		<bbb:MessageIdentification>
+			<hhh:IdentificationID>XXXXXXXXX.05-22-22.05-28-22</hhh:IdentificationID>
+		</bbb:MessageIdentification>
+		<bbb:MessageImplementationVersion>4.2</bbb:MessageImplementationVersion>
+		<bbb:MessageSubmittingOrganization>
+			<j:OrganizationAugmentation>
+				<j:OrganizationORIIdentification>
+					<hhh:IdentificationID>XXXXXXXXX</hhh:IdentificationID>
+				</j:OrganizationORIIdentification>
+			</j:OrganizationAugmentation>
+		</bbb:MessageSubmittingOrganization>
+	</bbb:MessageMetadata>
+	<aaa:Report s:id="I-I-XXXX19-03287">
+		<aaa:ReportHeader>
+			<aaa:kidndReportCategoryCode>REPORT</aaa:kidndReportCategoryCode>
+			<aaa:ReportActionCategoryCode>I</aaa:ReportActionCategoryCode>
+			<aaa:ReportDate>
+				<hhh:YearMonthDate>2022-05</hhh:YearMonthDate>
+			</aaa:ReportDate>
+			<aaa:ReportingAgency>
+				<j:OrganizationAugmentation>
+					<j:OrganizationORIIdentification>
+						<hhh:IdentificationID>XXXXXXXXX</hhh:IdentificationID>
+					</j:OrganizationORIIdentification>
+				</j:OrganizationAugmentation>
+			</aaa:ReportingAgency>
+		</aaa:ReportHeader>
+		<hhh:Incident>
+			<hhh:ActivityIdentification>
+				<hhh:IdentificationID>XXXX19-03287</hhh:IdentificationID>
+			</hhh:ActivityIdentification>
+			<hhh:ActivityDate>
+				<hhh:DateTime>2019-05-17T17:00:00</hhh:DateTime>
+				<hhh:YearMonthDate>2019-05</hhh:YearMonthDate>
+				<hhh:Date>2019-05-17</hhh:Date>
+			</hhh:ActivityDate>
+			<j:IncidentAugmentation>
+				<j:IncidentExceptionalClearanceCode>N</j:IncidentExceptionalClearanceCode>
+			</j:IncidentAugmentation>
+			<zzz:IncidentLocation>
+				<zzz:Coordinates>
+					<zzz:Latitude>00.000000</zzz:Latitude>
+					<zzz:Longitude>-00.000000</zzz:Longitude>
+				</zzz:Coordinates>
+				<zzz:Address>
+					<zzz:StreetNumber>237</zzz:StreetNumber>
+					<zzz:StreetName>E MAIN ST</zzz:StreetName>
+					<zzz:StreetNameExtension></zzz:StreetNameExtension>
+					<zzz:CityName>XXXXXXXXXXXXXX</zzz:CityName>
+					<zzz:StateCode>XX</zzz:StateCode>
+					<zzz:ZipCode>55555</zzz:ZipCode>
+				</zzz:Address>
+			</zzz:IncidentLocation>
+			<zzz:UseOfForce>false</zzz:UseOfForce>
+		</hhh:Incident>
+		<j:Dose s:id="Dose222643">
+			<zzz:DoseCode>23C</zzz:DoseCode>
+			<j:DoseFactor>
+				<j:DoseFactorCode>N</j:DoseFactorCode>
+			</j:DoseFactor>
+			<j:DoseAttemptedIndicator>false</j:DoseAttemptedIndicator>
+			<zzz:DoctorInvolvement>
+				<zzz:DoctorActivity>N </zzz:DoctorActivity>
+			</zzz:DoctorInvolvement>
+			<zzz:DropInvolvement>
+				<zzz:DropRelated>false</zzz:DropRelated>
+			</zzz:DropInvolvement>
+		</j:Dose>
+		<hhh:Location s:id="Location222643-1">
+			<zzz:LocationCategoryCode>12</zzz:LocationCategoryCode>
+		</hhh:Location>
+		<hhh:Item s:id = "Item159377">
+			<hhh:ItemStatus>
+				<bbb:ItemStatusCode>USED</bbb:ItemStatusCode>
+			</hhh:ItemStatus>
+			<hhh:ItemValue>
+				<hhh:ItemValueAmount>
+					<hhh:Amount>182</hhh:Amount>
+				</hhh:ItemValueAmount>
+			</hhh:ItemValue>
+			<zzz:ItemPropertyCategoryCode>08</zzz:ItemPropertyCategoryCode>
+		</hhh:Item>
+		<hhh:Person s:id="BusinessVictim464029"></hhh:Person>
+		<hhh:Person s:id="PersonSubject736791">
+			<hhh:PersonAgeMeasure>
+				<hhh:MeasureIntegerValue>49</hhh:MeasureIntegerValue>
+			</hhh:PersonAgeMeasure>
+			<j:PersonEthnicityCode>N</j:PersonEthnicityCode>
+			<j:PersonRaceNDExCode>W</j:PersonRaceNDExCode>
+			<j:PersonSexCode>F</j:PersonSexCode>
+		</hhh:Person>
+		<j:Victim s:id="Victim464029">
+			<hhh:RoleOfPerson s:ref="BusinessVictim464029" />
+			<j:VictimSequenceNumberText>1</j:VictimSequenceNumberText>
+			<j:VictimCategoryCode>B</j:VictimCategoryCode>
+		</j:Victim>
+		<j:Subject s:id="Subject736791">
+			<hhh:RoleOfPerson s:ref="PersonSubject736791" />
+			<j:SubjectSequenceNumberText>1</j:SubjectSequenceNumberText>
+		</j:Subject>
+		<j:DoseLocationAssociation>
+			<j:Dose s:ref="Dose222643" />
+			<hhh:Location s:ref="Location222643-1" />
+		</j:DoseLocationAssociation>
+		<j:DoseVictimAssociation>
+			<j:Dose s:ref="Dose222643" />
+			<j:Victim s:ref="Victim464029" />
+		</j:DoseVictimAssociation>
+		<zzz:ItemDoseAssociation>
+			<hhh:Item s:ref="Item159377" />
+			<j:Dose s:ref="Dose222643" />
+		</zzz:ItemDoseAssociation>
+	</aaa:Report>
+
+	<aaa:Report s:id="R-I-XXXX21-04886">
+		<aaa:ReportHeader>
+			<aaa:kidndReportCategoryCode></aaa:kidndReportCategoryCode>
+			<aaa:ReportActionCategoryCode>R</aaa:ReportActionCategoryCode>
+			<aaa:ReportDate>
+				<hhh:YearMonthDate>2022-05</hhh:YearMonthDate>
+			</aaa:ReportDate>
+			<aaa:ReportingAgency>
+				<j:OrganizationAugmentation>
+					<j:OrganizationORIIdentification>
+						<hhh:IdentificationID>XXXXXXXXX</hhh:IdentificationID>
+					</j:OrganizationORIIdentification>
+				</j:OrganizationAugmentation>
+			</aaa:ReportingAgency>
+		</aaa:ReportHeader>
+		<hhh:Incident>
+			<hhh:ActivityIdentification>
+				<hhh:IdentificationID>XXXX21-04886</hhh:IdentificationID>
+			</hhh:ActivityIdentification>
+			<hhh:ActivityDate>
+				<hhh:DateTime>2021-07-25T12:00:00</hhh:DateTime>
+				<hhh:YearMonthDate>2021-07</hhh:YearMonthDate>
+				<hhh:Date>2021-07-25</hhh:Date>
+			</hhh:ActivityDate>
+			<bbb:IncidentAugmentation>
+				<bbb:IncidentReportDateIndicator>false</bbb:IncidentReportDateIndicator>
+				<j:DoseCargoIndicator>false</j:DoseCargoIndicator>
+			</bbb:IncidentAugmentation>
+			<j:IncidentAugmentation>
+				<j:IncidentExceptionalClearanceCode>N</j:IncidentExceptionalClearanceCode>
+			</j:IncidentAugmentation>
+			<zzz:IncidentLocation>
+				<zzz:Coordinates>
+					<zzz:Latitude>00.000000</zzz:Latitude>
+					<zzz:Longitude>-00.000000</zzz:Longitude>
+				</zzz:Coordinates>
+				<zzz:Address>
+					<zzz:StreetNumber></zzz:StreetNumber>
+					<zzz:StreetName></zzz:StreetName>
+					<zzz:StreetNameExtension></zzz:StreetNameExtension>
+					<zzz:CityName>XXXXXXXXXXXXXX</zzz:CityName>
+					<zzz:StateCode>XX</zzz:StateCode>
+					<zzz:ZipCode>55555</zzz:ZipCode>
+				</zzz:Address>
+			</zzz:IncidentLocation>
+			<zzz:UseOfForce>false</zzz:UseOfForce>
+			
+		</hhh:Incident>
+		<j:Dose s:id="Dose280906">
+			<zzz:DoseCode>26A</zzz:DoseCode>
+			<j:DoseFactor>
+				<j:DoseFactorCode>N</j:DoseFactorCode>
+			</j:DoseFactor>
+			<j:DoseAttemptedIndicator>false</j:DoseAttemptedIndicator>
+			<zzz:DoctorInvolvement>
+				<zzz:DoctorActivity>N </zzz:DoctorActivity>
+			</zzz:DoctorInvolvement>
+			<zzz:DropInvolvement>
+				<zzz:DropRelated>false</zzz:DropRelated>
+			</zzz:DropInvolvement>
+			<zzz:Identity>false</zzz:Identity>
+			<zzz:Cyberhappen>false</zzz:Cyberhappen>
+		</j:Dose>
+		<hhh:Location s:id="Location280906-1">
+			<zzz:LocationCategoryCode>20</zzz:LocationCategoryCode>
+		</hhh:Location>
+		<hhh:Item s:id = "Item202645">
+			<hhh:ItemStatus>
+				<bbb:ItemStatusCode>USED</bbb:ItemStatusCode>
+			</hhh:ItemStatus>
+			<hhh:ItemValue>
+				<hhh:ItemValueAmount>
+					<hhh:Amount>0</hhh:Amount>
+				</hhh:ItemValueAmount>
+			</hhh:ItemValue>
+			<zzz:ItemPropertyCategoryCode>66</zzz:ItemPropertyCategoryCode>
+		</hhh:Item>
+		<hhh:Person s:id="PersonVictim661645">
+			<hhh:PersonAgeMeasure>
+				<hhh:MeasureIntegerValue>31</hhh:MeasureIntegerValue>
+			</hhh:PersonAgeMeasure>
+			<j:PersonEthnicityCode>N</j:PersonEthnicityCode>
+			<j:PersonRaceNDExCode>B</j:PersonRaceNDExCode>
+			<j:PersonResidentCode>R</j:PersonResidentCode>
+			<j:PersonSexCode>F</j:PersonSexCode>
+		</hhh:Person>
+		<hhh:Person s:id="PersonSubject661644"></hhh:Person>
+		<j:Victim s:id="Victim661645">
+			<hhh:RoleOfPerson s:ref="PersonVictim661645" />
+			<j:VictimSequenceNumberText>1</j:VictimSequenceNumberText>
+			<j:VictimCategoryCode>I</j:VictimCategoryCode>
+		</j:Victim>
+		<j:Subject s:id="Subject661644">
+			<hhh:RoleOfPerson s:ref="PersonSubject661644" />
+			<j:SubjectSequenceNumberText>00</j:SubjectSequenceNumberText>
+		</j:Subject>
+		<j:DoseLocationAssociation>
+			<j:Dose s:ref="Dose280906" />
+			<hhh:Location s:ref="Location280906-1" />
+		</j:DoseLocationAssociation>
+		<j:DoseVictimAssociation>
+			<j:Dose s:ref="Dose280906" />
+			<j:Victim s:ref="Victim661645" />
+		</j:DoseVictimAssociation>
+		<zzz:ItemDoseAssociation>
+			<hhh:Item s:ref="Item202645" />
+			<j:Dose s:ref="Dose280906" />
+		</zzz:ItemDoseAssociation>
+	</aaa:Report>
+</aaa:Submission>
