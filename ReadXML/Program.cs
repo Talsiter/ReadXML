@@ -14,14 +14,29 @@ namespace ReadXML
         static void Main(string[] args)
         {
             //ReadXMLToDataSet();
-             //ReadXML_Linq1();
-             //ReadXML_Linq2();
+            //ReadXML_Linq1();
+            //ReadXML_Linq2();
             // ReadXML_Linq3();
-             ReadXML_Linq4();
-            ReadXMLToDataSet();
+            //ReadXML_Linq4();
+            ReadXML_Linq5();
+
         }
 
 
+
+
+        private static void ReadXML_Linq5()
+        {
+            // This gets all of the name spaces, but it is not helpful
+            XDocument z = XDocument.Load(_fileName);
+
+            var result = z.Root.Attributes().
+                    Where(a => a.IsNamespaceDeclaration).
+                    GroupBy(a => a.Name.Namespace == XNamespace.None ? String.Empty : a.Name.LocalName,
+                            a => XNamespace.Get(a.Value)).
+                    ToDictionary(g => g.Key,
+                                 g => g.First());
+        }
         private static void ReadXML_Linq4()
         {
             XDocument submissions = XDocument.Load(_fileName);
