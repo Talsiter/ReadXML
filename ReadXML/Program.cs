@@ -9,22 +9,84 @@ namespace ReadXML
 {
     internal class Program
     {
-        public static string _fileName = @"Test2.xml";
+        public static string _fileNameTemp = @"C:\Users\Jeff Wright\Desktop\TN0830400.04-17-22.04-23-22.xml";
+        public static string _fileName = @"nibrs_GroupAIncident_Sample.xml";
+        public static string _orderXML = @"Order.xml";
 
         static void Main(string[] args)
         {
-            //ReadXMLToDataSet();
+           // ReadXMLToDataSet();
             //ReadXML_Linq1();
             //ReadXML_Linq2();
             // ReadXML_Linq3();
             //ReadXML_Linq4();
-            ReadXML_Linq5();
+            //ReadXML_Linq5();
+           // ReadXML_Linq6();
+            ReadXML_Linq7();
 
         }
 
 
 
 
+        private static void ReadXML_Linq7()
+        {
+            XNamespace nibrs = "http://fbi.gov/cjis/nibrs/4.2";
+            XNamespace cjis = "http://fbi.gov/cjis/1.0";
+            XNamespace cjiscodes = "http://fbi.gov/cjis/cjis-codes/1.0";
+            XNamespace i = "http://release.niem.gov/niem/appinfo/3.0/";
+            XNamespace ucr = "http://release.niem.gov/niem/codes/fbi_ucr/3.2/";
+            XNamespace j = "http://release.niem.gov/niem/domains/jxdm/5.2/";
+            XNamespace term = "http://release.niem.gov/niem/localTerminology/3.0/";
+            XNamespace nc = "http://release.niem.gov/niem/niem-core/3.0/";
+            XNamespace niem_xsd = "http://release.niem.gov/niem/proxy/xsd/3.0/";
+            XNamespace s = "http://release.niem.gov/niem/structures/3.0/";
+            XNamespace xsi = "http://www.w3.org/2001/XMLSchema-instance";
+            XNamespace xsd = "http://www.w3.org/2001/XMLSchema";
+            XNamespace nibrscodes = "http://fbi.gov/cjis/nibrs/nibrs-codes/4.2";
+            XNamespace moibrs = "http://www.beyond2020.com/moibrs/1.1";
+
+
+           
+        // https://stackoverflow.com/questions/40396966/c-sharp-read-xml-with-multiple-variable-namespaces
+
+            var doc = XDocument.Load(_fileName);
+
+            XElement element = doc.Root.Elements().Where(x => x.Name.LocalName == "MessageMetadata").FirstOrDefault();
+            List<XElement> element1 = doc.Root.Elements().Where(x => x.Name.LocalName == "Report").ToList();
+
+            var firstMessageDateTime = doc.Root.Elements().Where(x => x.Name.LocalName == "MessageMetadata").
+                                                Elements().Where(x => x.Name.LocalName == "MessageDateTime").FirstOrDefault().Value;
+
+            var n = doc.Root.Elements().Where(x => x.Name.LocalName == "MessageMetadata").
+                                                Elements().Where(x => x.Name.LocalName == "MessageDateTime").FirstOrDefault().Value;
+
+
+            XElement id = doc.Elements(nibrs + "Submission")
+               .Elements(nibrs + "Report")
+               .Single();
+        }
+        private static void ReadXML_Linq6()
+        {
+            XNamespace order = "urn:oasis:names:specification:ubl:schema:xsd:Order-2";
+            XNamespace cbc = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2";
+            XNamespace cac = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2";
+
+            var doc = XDocument.Load(_orderXML);
+
+            var id = (string)doc.Elements(order + "Order")
+                .Elements(cbc + "ID")
+                .Single();
+
+            var issueDate = (DateTime)doc.Elements(order + "Order")
+                .Elements(cbc + "IssueDate")
+                .Single();
+
+            var buyerPartySchemeId = (string)doc.Descendants(cac + "BuyerCustomerParty")
+                .Descendants(cbc + "ID")
+                .Attributes("schemeID")
+                .Single();
+        }
         private static void ReadXML_Linq5()
         {
             // This gets all of the name spaces, but it is not helpful
@@ -108,6 +170,7 @@ namespace ReadXML
             // the same name already belongs to this DataTable.'
 
             DataSet dataSet = new DataSet();
+            dataSet.ReadXmlSchema("nibrs.xsd");
             dataSet.ReadXml(_fileName);
         }
     }

@@ -1,0 +1,24 @@
+﻿<Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2" 
+	   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+	   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol3a:ver2.0:extended:urn:www.ubl-italia.org:spec:ordine:ver2.1</cbc:CustomizationID>
+	<cbc:ID>ORD-001</cbc:ID>
+	<cbc:IssueDate>2016-10-01</cbc:IssueDate>
+	<cbc:OrderTypeCode listID="UNCL1001">221</cbc:OrderTypeCode>
+	<cac:ValidityPeriod>
+		<cbc:EndDate>2024-10-19</cbc:EndDate>
+	</cac:ValidityPeriod>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="IT:IPA">ITAK12MH</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="IT:VAT">01567570254</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>A Custom Name</cbc:Name>
+			</cac:PartyName>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+</Order>

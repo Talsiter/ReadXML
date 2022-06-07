@@ -6,7 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Test2.xml">
+    <None Update="nibrs.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="nibrs_GroupAIncident_Sample.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Order.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
